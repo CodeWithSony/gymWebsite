@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sony Fitness</title>
+     <style>
+          body{
+    background-color:  greenyellow;
+    /* background: url('emilylogo.jpg'); */
+    background: url('backg.jpg');
+    background-size: 1400px 650px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    font-weight: bolder;
+
+}
+*{
+    margin: 0px;
+    padding: 0px
+}
+.left{
+position: absolute;
+left: 14px;
+top: 9px;
+display: inline-block;
+/* background-color: green; */
+/* border: 2px solid green; */
+}
+.left img{
+    width: 83px;
+    /* filter: invert(100%):- it will change black image into a white image */
+
+}
+.logoDiv{
+    text-align: center;
+    font-size: 13px;
+    line-height: 0px;
+}
+.mid{
+display: block;
+/* margin: 12px auto; */
+margin-top: 15px;
+margin-left: 123px;
+background-color: black;
+width:641px;
+padding: 10px;
+border-radius: 13px;
+}
+.right{
+    /* Position absolute fix something according to its parent and in relative it
+    fix element according to it's normal position */
+    position: absolute;
+        top: 18px;
+        right: 4px;
+    /* background-color: blueviolet; */
+}
+.btn{
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding:5px 3px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(47, 255, 54);
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 30px;
+}
+.navbar li a:hover, .navbar li a.active{
+    color: white;
+    text-decoration: underline;
+    padding: 34px 30px;
+    color: greenyellow;
+}
+.container{
+    margin: 76px 50px;
+    padding: 35px 23px;
+    border-radius: 16px;
+    width: 33vw;
+    border: 2px solid black;
+    
+}
+
+.form-group input{
+    text-align: center;
+    display: block;
+    width: 65%;
+    padding: 4px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 23;
+    font-size: 21px;
+    border-radius: 7px;
+    font-family: auto;
+}
+.container h3{
+    text-align: center;
+}
+.container button{
+    /* text-align: center; */
+    display: block;
+    margin: auto;
+    width: 65%;
+
+}
+     </style>
+  </head>
+  <body>
+       <!-- li.item{<a></a>}*5 -->
+        <!-- Search Emmet for better experience in vs code -->
+    <div class="left">
+      <img src="emilylogo.jpg" alt="" />
+      <div class="logoDiv">Sony Fitness</div>
+    </div>
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Fitness Center</a></li>
+        <li><a href="">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="right">
+        <button class="btn">
+      Call Us Now
+        </button>
+        <button class="btn">
+     Email Us
+        </button>
+    </div>
+    <div class="container">
+      <h3>
+        Join the best gym of Delhi now
+      </h3>
+      <form action="noaction.php">
+        <div class="form-group"><input type="text" name="" placeholder="Enter Your Name"></div>
+        <div class="form-group"><input type="text" name="" placeholder="Enter Your Age"></div>
+        <div class="form-group"><input type="text" name="" placeholder="Enter Your Gender"></div>
+        <div class="form-group"><input type="text" name="" placeholder="Enter Your Locality"></div>
+        <button class="btn">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
